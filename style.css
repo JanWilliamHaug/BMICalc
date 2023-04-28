@@ -108,7 +108,7 @@ button#calculate:hover {
   color: #4f7df9;
   font-weight: 800;
 }
-/* Youtube link */
+
 .link {
   position: fixed;
   background-color: #d12322;
@@ -135,3 +135,73 @@ button#calculate:hover {
   background-color: black;
 }
 
+.box {
+  animation: slide-in 1s;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for reset button */
+button#reset {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #f44336;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
+  margin-top: 15px;
+}
+
+button#reset:hover {
+  background: #d32f2f;
+}
+
+/* category colors */
+#comment {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .box {
+    min-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    transform: translateY(-50%);
+  }
+  .box {
+    min-width: 80%;
+  }
+  .input input {
+    width: 80%;
+  }
+  .link {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .box {
+    min-width: 70%;
+  }
+  .input input {
+    width: 70%;
+  }
+}

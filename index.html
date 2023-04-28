@@ -1,10 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<html>
-
-<div class="container">
-
-
-    
+  <div class="container">
     <div class="box">
       <h1>BMI Calculator</h1>
       <div class="content">
@@ -16,20 +19,30 @@
           <label for="weight">Weight(kg)</label>
           <input type="number" id="weight">
         </div>
+        <div class="input">
+          <label for="age">Age</label>
+          <input type="number" id="age">
+        </div>
+        <div class="input">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="other">Other</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
         <button id="calculate">Calculate BMI</button>
       </div>
       <div class="result">
         <p>Your BMI is</p>
         <div id="result">00.00</div>
         <p class="comment"></p>
+        <div id="tips" class="tips"></div>
       </div>
+      <button id="reset">Reset</button> 
     </div>
-    
   </div>
   <a href="https://janwilliam.vercel.app" target="_blank" class="link">Check out my Portfolio <i class="fab fa-youtube"></i></a>
-  <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-  </body>
+</body>
 </html>
-  
-    
