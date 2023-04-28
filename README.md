@@ -17,7 +17,7 @@ To run the BMI Calculator locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Open the `index.html` file in your preferred web browser.
 
-That's it! You can now use the BMI Calculator.
+That's it! You can now use the Calculator to calculate your BMI.
 
 ## Technologies Used
 
