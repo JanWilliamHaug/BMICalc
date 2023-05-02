@@ -274,6 +274,9 @@ button#darkModeToggle:hover, select#language:hover {
   .result p {
     font-size: 28px; /* Increase the font size of result paragraph */
   }
+  .result .tips {
+    font-size: 28px; /* Increase the font size of result paragraph */
+  }
   .result #result {
     font-size: 45px; /* Increase the font size of result value */
   }
