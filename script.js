@@ -83,6 +83,40 @@ resetBtn.addEventListener("click", function () {
   document.querySelector(".comment").innerHTML = "";
   document.querySelector("#comment").style.backgroundColor = "transparent";
 
-  // Remove the "show" class from the result section
+
   resultSection.classList.remove("show");
 });
+
+// Dark mode toggle
+const darkModeToggle = document.getElementById("darkModeToggle");
+
+darkModeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
+
+
+// Language select
+const languageSelect = document.getElementById("language");
+
+languageSelect.addEventListener("change", () => {
+  updateLanguage(languageSelect.value);
+});
+
+function updateLanguage(lang) {
+  const langData = LANGUAGES[lang];
+
+  document.getElementById("darkModeToggle").textContent = langData.toggleDarkMode;
+  document.querySelector('label[for="height"]').textContent = langData.height;
+  document.querySelector('label[for="weight"]').textContent = langData.weight;
+  document.querySelector('label[for="age"]').textContent = langData.age;
+  document.querySelector('label[for="gender"]').textContent = langData.gender;
+  document.querySelector('option[value="other"]').textContent = langData.other;
+  document.querySelector('option[value="male"]').textContent = langData.male;
+  document.querySelector('option[value="female"]').textContent = langData.female;
+  document.getElementById("calculate").textContent = langData.calculate;
+  document.querySelector(".result p").textContent = langData.yourBMI;
+  document.getElementById("reset").textContent = langData.reset;
+}
+
+
+updateLanguage("en");

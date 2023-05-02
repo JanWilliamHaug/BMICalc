@@ -114,7 +114,7 @@ button#calculate:hover {
   margin-bottom: 25px;
 }
 
-/* Add this rule to the global styles */
+/* global styles */
 .result {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -123,12 +123,12 @@ button#calculate:hover {
   opacity: 1;
 }
 
-/* Add this rule to the global styles */
+
 .input input:hover, .input select:hover {
   background-color: rgba(79, 125, 249, 0.1);
 }
 
-/* Add this rule to the global styles */
+
 .input input:focus, .input select:focus {
   background-color: rgba(79, 125, 249, 0.1);
   transform: scale(1.02);
@@ -181,7 +181,7 @@ button#calculate:hover {
   }
 }
 
-/* Style for reset button */
+
 button#reset {
   font-family: "Nunito", sans-serif;
   color: #fff;
@@ -206,6 +206,58 @@ button#reset:hover {
   border-radius: 5px;
 }
 
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .box {
+  background-color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode button {
+  background-color: #444;
+  color: #fff;
+}
+
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+
+button#darkModeToggle, select#language {
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: #4f7df9;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 48%;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+
+button#darkModeToggle:hover, select#language:hover {
+  background: #0044ff;
+}
+
+
+.dark-mode button#darkModeToggle, .dark-mode select#language {
+  background-color: #444;
+  color: #fff;
+}
+
+
+
+/* ********** RESPONSIVE ********** */
+
+/* PC Screens */
 @media (min-width: 1025px) {
   .box {
     max-width: 480px; 
