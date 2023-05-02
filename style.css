@@ -18,8 +18,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
+
 .box {
   width: 100%;
   max-width: 400px;
@@ -27,7 +28,7 @@ body {
   border-radius: 38px;
   text-align: center;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .box::before {
   content: "";
