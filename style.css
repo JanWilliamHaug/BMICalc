@@ -6,21 +6,23 @@
   box-sizing: border-box;
 }
 body {
+  max-width: 1200px;
+  margin: 0 auto;
   min-height: 100vh;
-  
   background: url("https://i.ibb.co/Ks5XW5v/bmi-background-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "Nunito", sans-serif;
 }
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .box {
-  min-width: 400px;
+  width: 100%;
+  max-width: 400px;
   background: #fafafa;
   border-radius: 38px;
   text-align: center;
@@ -65,7 +67,7 @@ h1 {
   outline: none;
   border: none;
   border-bottom: 1px solid #4f7df9;
-  width: 60%;
+  width: 100%;
   text-align: center;
   font-size: 28px;
   font-family: "Nunito", sans-serif;
