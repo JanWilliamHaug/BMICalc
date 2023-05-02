@@ -37,7 +37,7 @@ Feel free to submit pull requests or open issues to contribute to the project. A
 
 Here is a link to the BMI calculator: https://fitnesscalculator.vercel.app/
 
-## Screenshot
+## Screenshots
 
 ![image](https://user-images.githubusercontent.com/71844869/235582222-afc49113-205a-405c-8633-29c4b8b8d16b.png)
 
