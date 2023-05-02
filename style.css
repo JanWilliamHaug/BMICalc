@@ -26,7 +26,7 @@ body {
 
 .box {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px; 
   background: #fafafa;
   border-radius: 38px;
   text-align: center;
@@ -94,6 +94,8 @@ button#calculate:hover {
 }
 .result {
   padding: 30px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 .result p {
   font-weight: 600;
@@ -111,6 +113,28 @@ button#calculate:hover {
   border-radius: 55px;
   margin-bottom: 25px;
 }
+
+/* Add this rule to the global styles */
+.result {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.result.show {
+  opacity: 1;
+}
+
+/* Add this rule to the global styles */
+.input input:hover, .input select:hover {
+  background-color: rgba(79, 125, 249, 0.1);
+}
+
+/* Add this rule to the global styles */
+.input input:focus, .input select:focus {
+  background-color: rgba(79, 125, 249, 0.1);
+  transform: scale(1.02);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
 #comment {
   color: #4f7df9;
   font-weight: 800;
@@ -180,6 +204,47 @@ button#reset:hover {
 #comment {
   padding: 5px;
   border-radius: 5px;
+}
+
+@media (min-width: 1025px) {
+  .box {
+    max-width: 480px; 
+  }
+  h1 {
+    font-size: 46px; /* Increase the font size of the title */
+  }
+  .input label {
+    font-size: 26px; /* Increase the font size of input labels */
+  }
+  .input input {
+    font-size: 36px; /* Increase the font size of input fields */
+  }
+  .result p {
+    font-size: 28px; /* Increase the font size of result paragraph */
+  }
+  .result #result {
+    font-size: 45px; /* Increase the font size of result value */
+  }
+  /* Increase the font size and padding of the Calculate BMI button */
+  .input select {
+    font-size: 28px;
+    padding: 4px 8px;
+  }
+  
+  /* Increase the font size and padding of the Calculate BMI button */
+  button#calculate {
+    font-size: 26px;
+    padding: 16px 0;
+  }
+  .reset {
+    font-size: 26px;
+    padding: 16px 0;
+  }
+  /* Increase the font size and padding of the Reset button */
+  button#reset {
+    font-size: 21px;
+    padding: 14px 0;
+    }
 }
 
 /* For mobile devices */

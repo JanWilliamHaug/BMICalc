@@ -1,6 +1,7 @@
 const btn = document.getElementById("calculate");
 const ageInput = document.getElementById("age");
 const genderInput = document.getElementById("gender");
+const resultSection = document.querySelector(".result");
 
 btn.addEventListener("click", function () {
   let height = document.querySelector("#height").value;
@@ -65,6 +66,9 @@ btn.addEventListener("click", function () {
 
   commentElement.innerHTML = `Comment: you are <span>${status}</span>`;
   document.querySelector("#tips").innerHTML = tips;
+
+  // Add the "show" class to the result section
+  resultSection.classList.add("show");
 });
 
 // Reset button functionality
@@ -78,4 +82,7 @@ resetBtn.addEventListener("click", function () {
   document.querySelector("#result").innerHTML = "00.00";
   document.querySelector(".comment").innerHTML = "";
   document.querySelector("#comment").style.backgroundColor = "transparent";
+
+  // Remove the "show" class from the result section
+  resultSection.classList.remove("show");
 });
