@@ -69,6 +69,19 @@ btn.addEventListener("click", function () {
 
   // Add the "show" class to the result section
   resultSection.classList.add("show");
+  // GSAP animations for the result section
+  gsap.from(".result.show #result", {
+    duration: 0.5,
+    scale: 0,
+    ease: "back.out(1.7)",
+  });
+  gsap.from(".result.show p, .result.show #comment", {
+    duration: 0.5,
+    opacity: 0,
+    y: -20,
+    delay: 0.5,
+    stagger: 0.2,
+  });
 });
 
 // Reset button functionality
@@ -85,6 +98,16 @@ resetBtn.addEventListener("click", function () {
 
 
   resultSection.classList.remove("show");
+  // GSAP animations for resetting the result section
+gsap.to(".result #result, .result p, .result #comment", {
+  duration: 0.3,
+  opacity: 0,
+  y: -20,
+  onComplete: function () {
+    resultSection.classList.remove("show");
+    gsap.set(".result #result, .result p, .result #comment", { clearProps: "all" });
+  },
+});
 });
 
 // Dark mode toggle
