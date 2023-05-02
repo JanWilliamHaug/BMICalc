@@ -7,6 +7,10 @@ The BMI Calculator is a simple, user-friendly web application designed to help u
 - Responsive design for optimal viewing on various devices
 - Fast and accurate BMI calculation
 - Simple and clean user interface
+- Interactive result display
+- Dark mode for enhanced user experience
+- Multi-language support (English and Norwegian)
+- Personalized tips based on age, gender, and BMI category
 
 ## Getting Started
 
@@ -22,6 +26,7 @@ That's it! You can now use the Calculator to calculate your BMI.
 - HTML
 - CSS
 - JavaScript
+- GSAP (GreenSock Animation Platform)
 
 ## Contributing
 
@@ -35,3 +40,5 @@ Here is a link to the BMI calculator: https://fitnesscalculator.vercel.app/
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/71844869/235092424-f9d9f460-9e85-4983-8417-f9dc5a6cc835.png)
+
+(Dark Mode)
