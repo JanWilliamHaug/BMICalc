@@ -42,9 +42,11 @@ Here is a link to the BMI calculator: https://fitnesscalculator.vercel.app/
 ![image](https://user-images.githubusercontent.com/71844869/235582222-afc49113-205a-405c-8633-29c4b8b8d16b.png)
 
 (Dark Mode)
+
 ![image](https://user-images.githubusercontent.com/71844869/235582292-ce997444-1d5f-440d-a869-97d43fb29cc3.png)
 
 (In Norwegian)
+
 ![image](https://user-images.githubusercontent.com/71844869/235582350-f005f471-6d6a-4d26-9067-2455abe0ad96.png)
 
 
