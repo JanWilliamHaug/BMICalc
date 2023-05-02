@@ -14,11 +14,14 @@ body {
   background-repeat: no-repeat;
   font-family: "Nunito", sans-serif;
 }
+
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .box {
@@ -30,6 +33,7 @@ body {
   position: relative;
   margin-bottom: 50px;
 }
+
 .box::before {
   content: "";
   position: absolute;
@@ -178,19 +182,22 @@ button#reset:hover {
   border-radius: 5px;
 }
 
-/* Mobile friendly */
+/* For mobile devices */
 @media (max-width: 480px) {
   .box {
     min-width: 90%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .input input {
+    width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .container {
-    transform: translateY(-50%);
-  }
   .box {
     min-width: 80%;
+    max-width: 80%;
   }
   .input input {
     width: 80%;
@@ -203,6 +210,7 @@ button#reset:hover {
 @media (max-width: 1024px) {
   .box {
     min-width: 70%;
+    max-width: 70%;
   }
   .input input {
     width: 70%;
