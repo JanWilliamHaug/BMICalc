@@ -24,6 +24,17 @@ const LANGUAGES = {
       calculate: "Beregn BMI",
       yourBMI: "Din BMI er",
       reset: "Tilbakestill",
+
+      norwegianCommentsTips: {
+        underweight: "Vurder å spise mer sunn mat for å øke vekten.",
+        healthy: "Oppretthold din nåværende livsstil og diett for å holde BMI-en din i det sunne området.",
+        overweight: "Vurder å gjøre noen livsstilsendringer og inkluder trening i rutinen din.",
+        obese: "Vurder å konsultere en lege eller ernæringsfysiolog for å utvikle en vektreduksjonsplan.",
+        male: "Som mann, prøv å opprettholde et balansert kosthold og tren regelmessig.",
+        female: "Som kvinne, prøv å opprettholde et balansert kosthold og tren regelmessig.",
+        other: "Prøv å opprettholde et balansert kosthold og trene regelmessig.",
+        under18: "Siden du er under 18 år, er det viktig å konsultere en helsepersonell for personlig rådgivning.",
+      },
     },
   };
   

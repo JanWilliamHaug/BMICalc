@@ -3,11 +3,32 @@ const ageInput = document.getElementById("age");
 const genderInput = document.getElementById("gender");
 const resultSection = document.querySelector(".result");
 
+const statusTranslations = {
+  underweight: {
+    en: "underweight",
+    no: "undervektig",
+  },
+  healthy: {
+    en: "healthy",
+    no: "Ssunn",
+  },
+  overweight: {
+    en: "overweight",
+    no: "overvektig",
+  },
+  obese: {
+    en: "obese",
+    no: "fedme",
+  },
+};
+
 btn.addEventListener("click", function () {
   let height = document.querySelector("#height").value;
   let weight = document.querySelector("#weight").value;
   let age = ageInput.value;
   let gender = genderInput.value;
+  let lang = languageSelect.value;
+  let tipsTranslations = LANGUAGES[lang].norwegianCommentsTips;
 
   if (height == "" || weight == "" || age == "" || gender == "") {
     alert("Please fill out all input fields!");
@@ -35,36 +56,37 @@ btn.addEventListener("click", function () {
   let tips = "";
 
   if (BMI < 18.5) {
-    status = "Underweight";
+    status = lang === "no" ? statusTranslations.underweight.no : statusTranslations.underweight.en;
     commentElement.style.backgroundColor = "#3f51b5";
-    tips = "Consider eating more healthy foods to increase your weight.";
+    tips = lang === "no" ? tipsTranslations.underweight : "Consider eating more healthy foods to increase your weight.";
   } else if (BMI >= 18.5 && BMI < 25) {
-    status = "Healthy";
+    status = lang === "no" ? statusTranslations.healthy.no : statusTranslations.healthy.en;
     commentElement.style.backgroundColor = "#4caf50";
-    tips = "Maintain your current lifestyle and diet to keep your BMI in the healthy range.";
+    tips = lang === "no" ? tipsTranslations.healthy : "Maintain your current lifestyle and diet to keep your BMI in the healthy range.";
   } else if (BMI >= 25 && BMI < 30) {
-    status = "Overweight";
+    status = lang === "no" ? statusTranslations.overweight.no : statusTranslations.overweight.en;
     commentElement.style.backgroundColor = "#ff9800";
-    tips = "Consider making some lifestyle changes and incorporating exercise into your routine.";
+    tips = lang === "no" ? tipsTranslations.overweight : "Consider making some lifestyle changes and incorporating exercise into your routine.";
   } else {
-    status = "Obese";
+    status = lang === "no" ? statusTranslations.obese.no : statusTranslations.obese.en;
     commentElement.style.backgroundColor = "#f44336";
-    tips = "Consider consulting with a doctor or nutritionist to develop a weight loss plan.";
+    tips = lang === "no" ? tipsTranslations.obese : "Consider consulting with a doctor or nutritionist to develop a weight loss plan.";
   }
 
   if (age >= 18) {
     if (gender === "male") {
-      tips += " As a man, try to maintain a balanced diet and exercise regularly.";
+      tips += lang === "no" ? tipsTranslations.male : " As a man, try to maintain a balanced diet and exercise regularly.";
     } else if (gender === "female") {
-      tips += " As a woman, try to maintain a balanced diet and exercise regularly.";
+      tips += lang === "no" ? tipsTranslations.female : " As a woman, try to maintain a balanced diet and exercise regularly.";
     } else {
-      tips += " Try to maintain a balanced diet and exercise regularly.";
+      tips += lang === "no" ? tipsTranslations.other : " Try to maintain a balanced diet and exercise regularly.";
     }
   } else {
-    tips += " Since you're under 18, it's important to consult with a healthcare professional for personalized advice.";
+    tips += lang === "no" ? tipsTranslations.under18 : " Since you're under 18, it's important to consult with a healthcare professional for personalized advice.";
   }
 
-  commentElement.innerHTML = `Comment: you are <span>${status}</span>`;
+
+  commentElement.innerHTML = `${lang === "no" ? "Kommentar: Du er" : "Comment: You are"} <span>${status}</span>`;
   document.querySelector("#tips").innerHTML = tips;
 
   // Add the "show" class to the result section
