@@ -10,7 +10,7 @@ const statusTranslations = {
   },
   healthy: {
     en: "healthy",
-    no: "Ssunn",
+    no: "sunn",
   },
   overweight: {
     en: "overweight",
