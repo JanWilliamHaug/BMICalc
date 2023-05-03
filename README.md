@@ -32,7 +32,6 @@ That's it! You can now use the Calculator to calculate your BMI.
 
 Feel free to submit pull requests or open issues to contribute to the project. Any feedback or suggestions are welcome!
 
-
 ## Application
 
 Here is a link to the BMI calculator: https://fitnesscalculator.vercel.app/
