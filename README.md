@@ -1,6 +1,6 @@
 # :man_health_worker: BMI Calculator
 
-![GitHub repo size](https://img.shields.io/github/repo-size/username/repo-name?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/JanWilliamHaug/BMICalc?style=flat-square)
 ![GitHub issues](https://img.shields.io/github/issues/username/repo-name?style=flat-square)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/username/repo-name?style=flat-square)
 ![GitHub](https://img.shields.io/github/license/username/repo-name?style=flat-square)
