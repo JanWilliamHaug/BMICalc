@@ -1,9 +1,6 @@
 # :man_health_worker: BMI Calculator
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/JanWilliamHaug/BMICalc?style=flat-square)
-![GitHub issues](https://img.shields.io/github/issues/username/repo-name?style=flat-square)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/username/repo-name?style=flat-square)
-![GitHub](https://img.shields.io/github/license/username/repo-name?style=flat-square)
 
 The BMI Calculator is a simple, user-friendly web application designed to help users quickly and easily calculate their Body Mass Index (BMI). The application provides an intuitive interface for users to input their height, weight, age, and gender, and it instantly calculates their BMI, providing an informative interpretation of the result.
 
