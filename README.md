@@ -4,6 +4,7 @@
 
 The BMI Calculator is a simple, user-friendly web application designed to help users quickly and easily calculate their Body Mass Index (BMI). The application provides an intuitive interface for users to input their height, weight, age, and gender, and it instantly calculates their BMI, providing an informative interpretation of the result.
 
+
 ## :sparkles: Features
 
 - Responsive design for optimal viewing on various devices
